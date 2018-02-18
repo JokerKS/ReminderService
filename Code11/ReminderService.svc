@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Code11.ReminderService" CodeBehind="ReminderService.svc.cs" Factory="Code11.ReminderServiceFactory" %>
