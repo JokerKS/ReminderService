@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="200d3647-44be-48d5-80fb-0b5ea932b006" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:7552/ReminderService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ReminderService.disco" MetadataType="Disco" ID="487b764e-e223-4f0c-994b-4bda0cae3bd1" SourceId="1" SourceUrl="http://localhost:7552/ReminderService.svc?disco" />
+    <MetadataFile FileName="ReminderService.wsdl" MetadataType="Wsdl" ID="5a63cc89-c6dd-490a-8c15-640518f0133a" SourceId="1" SourceUrl="http://localhost:7552/ReminderService.svc?wsdl" />
+    <MetadataFile FileName="ReminderService.xsd" MetadataType="Schema" ID="d87562c3-f756-49cd-bbb8-262fdca58252" SourceId="1" SourceUrl="http://localhost:7552/ReminderService.svc?xsd=xsd4" />
+    <MetadataFile FileName="ReminderService1.xsd" MetadataType="Schema" ID="9814f815-f906-489b-aec2-9644d40069d2" SourceId="1" SourceUrl="http://localhost:7552/ReminderService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ReminderService2.xsd" MetadataType="Schema" ID="081607a1-fc56-4e72-bde2-918ef4ec5eb2" SourceId="1" SourceUrl="http://localhost:7552/ReminderService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ReminderService3.xsd" MetadataType="Schema" ID="f783a92b-af24-4693-b2d1-ed46b1464d08" SourceId="1" SourceUrl="http://localhost:7552/ReminderService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ReminderService4.xsd" MetadataType="Schema" ID="37ae27c8-8a26-491b-b8eb-c6c8276dff88" SourceId="1" SourceUrl="http://localhost:7552/ReminderService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

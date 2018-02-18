@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReminderService", "Code11\ReminderService.csproj", "{47E0AA87-80DB-4A2B-9B7F-060CE8F8594C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReminderClient", "..\..\ReminderClient\ReminderClient\ReminderClient.csproj", "{0FF66A5C-3E0E-4F8E-B3E8-2306DBC8E53D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReminderClient", "ReminderClient\ReminderClient.csproj", "{0FF66A5C-3E0E-4F8E-B3E8-2306DBC8E53D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

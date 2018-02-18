@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Code11" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Code11" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:7552/ReminderService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Code11.Model" />
+  <xs:complexType name="User">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Code11.Model" base="q1:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Reminders" nillable="true" type="q1:ArrayOfReminder" />
+          <xs:element name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="NotCorrectUsernameOrPassword">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceException">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NotCorrectUsernameOrPassword" nillable="true" type="tns:NotCorrectUsernameOrPassword" />
+  <xs:complexType name="ServiceException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceException" nillable="true" type="tns:ServiceException" />
+  <xs:complexType name="UserNotFound">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceException">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserNotFound" nillable="true" type="tns:UserNotFound" />
+  <xs:complexType name="NotCorrectDataAndTime">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceException">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NotCorrectDataAndTime" nillable="true" type="tns:NotCorrectDataAndTime" />
+  <xs:complexType name="ReminderNotFound">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceException">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReminderNotFound" nillable="true" type="tns:ReminderNotFound" />
+</xs:schema>
